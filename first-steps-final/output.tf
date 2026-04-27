@@ -9,3 +9,7 @@ output "public_subnets" {
 output "vpc_id" {
   value = module.vpc.vpc_id
 }
+
+output "data"{
+  value = module.
+}

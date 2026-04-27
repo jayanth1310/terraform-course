@@ -17,3 +17,16 @@ variable "AMIS" {
   }
 }
 
+variable "instances" {
+  type = int 
+  default = 50
+}
+variable "data"{
+  default = "s3://buckets-of-data"
+  type= string
+}
+
+variable "maps_of_data_sources"{
+  type = map
+  default = { ami = "ami-01298392", name = "snowflake" }
+}
